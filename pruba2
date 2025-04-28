@@ -1,0 +1,56 @@
+<mxfile host="app.diagrams.net">
+    <diagram name="Page-1" id="UxCFU_nnXvQbK4zJh3Xm">
+        <mxGraphModel dx="946" dy="532" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+            <root>
+                <mxCell id="0" />
+                <mxCell id="1" parent="0" />
+                
+                <!-- App Móvil -->
+                <mxCell id="app" value="&lt;b&gt;Aplicación Móvil&lt;/b&gt;&lt;br&gt;(Frontend)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+                    <mxGeometry x="300" y="200" width="120" height="60" as="geometry" />
+                </mxCell>
+                
+                <!-- Backend Services -->
+                <mxCell id="backend" value="&lt;b&gt;Backend Services&lt;/b&gt;&lt;br&gt;- Functions&lt;br&gt;- APIs&lt;br&gt;- Integrations" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" vertex="1" parent="1">
+                    <mxGeometry x="100" y="350" width="150" height="100" as="geometry" />
+                </mxCell>
+                
+                <!-- Headless CMS -->
+                <mxCell id="cms" value="&lt;b&gt;Headless CMS&lt;/b&gt;&lt;br&gt;- API&lt;br&gt;- CDN&lt;br&gt;- Web Admin" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+                    <mxGeometry x="300" y="350" width="150" height="100" as="geometry" />
+                </mxCell>
+                
+                <!-- Push Notifications -->
+                <mxCell id="notifications" value="&lt;b&gt;Push Notifications&lt;/b&gt;&lt;br&gt;- Cloud Messaging&lt;br&gt;- Apple APNs" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+                    <mxGeometry x="500" y="350" width="150" height="80" as="geometry" />
+                </mxCell>
+                
+                <!-- Email Services -->
+                <mxCell id="email" value="&lt;b&gt;Email Services&lt;/b&gt;&lt;br&gt;- Search&lt;br&gt;- Identity&lt;br&gt;- Agents" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+                    <mxGeometry x="300" y="500" width="150" height="80" as="geometry" />
+                </mxCell>
+                
+                <!-- Editors/Admins -->
+                <mxCell id="admins" value="&lt;b&gt;Editores/Administradores&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+                    <mxGeometry x="500" y="500" width="150" height="60" as="geometry" />
+                </mxCell>
+                
+                <!-- Conexiones -->
+                <mxCell id="conn1" style="edgeStyle=none;rounded=0;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=classic;endFill=1;" edge="1" parent="1" source="app" target="backend">
+                    <mxGeometry relative="1" as="geometry" />
+                </mxCell>
+                <mxCell id="conn2" style="edgeStyle=none;rounded=0;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=classic;endFill=1;" edge="1" parent="1" source="app" target="cms">
+                    <mxGeometry relative="1" as="geometry" />
+                </mxCell>
+                <mxCell id="conn3" style="edgeStyle=none;rounded=0;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=classic;endFill=1;" edge="1" parent="1" source="app" target="notifications">
+                    <mxGeometry relative="1" as="geometry" />
+                </mxCell>
+                <mxCell id="conn4" style="edgeStyle=none;rounded=0;html=1;exitX=0.25;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=classic;endFill=1;" edge="1" parent="1" source="backend" target="email">
+                    <mxGeometry relative="1" as="geometry" />
+                </mxCell>
+                <mxCell id="conn5" style="edgeStyle=none;rounded=0;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=classic;endFill=1;" edge="1" parent="1" source="cms" target="admins">
+                    <mxGeometry relative="1" as="geometry" />
+                </mxCell>
+            </mxGraphModel>
+        </diagram>
+    </mxfile>
